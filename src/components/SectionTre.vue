@@ -3,6 +3,7 @@
         <div class="courses cont-60">
 
             <div class="course-info">
+                <img class="corner" src="../assets/img/new-corner.jpg" alt="img">
                 <h2>Courses</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, cupiditate aut consectetur eos debitis architecto</p>
                 <span class="btn-green">CURSE INFORMATION</span>
@@ -63,6 +64,14 @@
                 box-shadow: 0 25px 35px #BBBEC1;
                 position: relative;
                 top: -20px;
+
+                .corner{
+
+                    width: 80px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
 
                 h2{
 
