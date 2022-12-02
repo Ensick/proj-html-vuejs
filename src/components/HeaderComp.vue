@@ -3,7 +3,7 @@
         <nav>
 
             <div class="bg-darkgray">
-                <div class="head-call">
+                <div class="head-call cont-75">
                     <div>
                         <span>We have a 95% Successful Pass Rate!</span>
                     </div>
@@ -16,7 +16,7 @@
             </div>
 
             <div class="bg-rgba-darkgray">
-                <div class="head-nav-menu">
+                <div class="head-nav-menu cont-75">
 
                     <div>
                         <img src="../assets/img/avada-drivers-logo-1x.png" alt="logo">
@@ -35,6 +35,21 @@
                         <span class="btn-green">BOOK NOW</span>
                     </div>
 
+                </div>
+
+                <div class="cont-sales">
+                    <div class="demos">
+                        <font-awesome-icon icon="fa-solid fa-folder"/>
+                        <span>Demos</span>
+                    </div>
+
+                    <div class="sales">
+                        <div>
+                            <font-awesome-icon icon="fa-solid fa-dollar-sign" />
+                            <span>39</span>
+                        </div>
+                        <span>On Sale</span>
+                    </div>
                 </div>
             </div>
             
@@ -66,8 +81,6 @@
 
                 .head-call{
 
-                    width: 75%;
-                    margin: 0 auto;
                     display: flex;
                     justify-content: space-between;
                     color: #717472;
@@ -86,8 +99,6 @@
 
                 .head-nav-menu{
 
-                    width: 75%;
-                    margin: 0 auto;
                     padding: 30px 0;
                     display: flex;
                     justify-content: space-between;
@@ -106,6 +117,45 @@
                         }
                     }
                 }
+            }
+        }
+
+        .cont-sales{
+            
+            position: absolute;
+            right: 15px;
+            top: 150px;
+
+            .demos,.sales{
+
+                background-color: white;
+                width: 70px;
+                height: 65px;
+                padding: 5px;
+                border-radius: 10px;
+                text-align: center;
+                margin-bottom: 5px;
+                cursor: pointer;
+            }
+
+            .sales div span{
+
+                font-size: 2rem;
+                color: #7ABC64;
+                vertical-align: top;
+            }
+
+            .fa-folder{
+
+                font-size: 1.5rem;
+                color: #33475B;
+                padding-bottom: 5px;
+            }
+
+            .fa-dollar-sign{
+
+                font-size: 1rem;
+                color: #7ABC64;
             }
         }
     }

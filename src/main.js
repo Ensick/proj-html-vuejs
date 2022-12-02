@@ -9,12 +9,12 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faUserSecret,faPhoneFlip} from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret,faPhoneFlip,faFolder,faDollarSign} from '@fortawesome/free-solid-svg-icons'
 /*Import icone regular */
 import { faFaceSmile } from '@fortawesome/free-regular-svg-icons'
 
 /* add icons to the library */
-library.add(faUserSecret,faFaceSmile,faPhoneFlip)
+library.add(faUserSecret,faFaceSmile,faPhoneFlip,faFolder,faDollarSign)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
