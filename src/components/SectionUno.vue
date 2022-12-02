@@ -36,7 +36,7 @@ section{
 
         flex-basis: 60%;
         padding: 60px 80px 60px 0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
         h2{
             font-size: 2.5rem;
@@ -51,7 +51,7 @@ section{
 
     .description p:last-child{
 
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-top: 30px;
         line-height: 25px;
     }
@@ -59,23 +59,25 @@ section{
     .sign-in{
 
         background-color: white;
-        border-radius: 30px;
+        border-radius: 15px;
         box-shadow: 0 25px 35px lightgrey;
         text-align: center;
         flex-basis: 40%;
         padding: 60px 30px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         position: relative;
         top: -80px;
 
         h3{
 
+            font-size: 1.8rem;
             padding-bottom: 25px;
+            color: #7ABC64;
         }
 
         p{
 
-            font-size: 1.2rem;
+            font-size: 1rem;
             padding-bottom: 30px;
         }
 
@@ -86,8 +88,11 @@ section{
 
                 width: 100%;
                 height: 50px;
+                padding-left: 20px;
                 margin-bottom: 20px;
-                font-size: 1.2rem;
+                font-size: 1rem;
+                background-color: #F7F7F7;
+                border: none;
             }
         }
     }
