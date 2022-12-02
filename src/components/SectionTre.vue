@@ -46,7 +46,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: bottom;
-        height: 500px;
+        height: 550px;
 
         .courses{
 
