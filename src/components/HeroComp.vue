@@ -1,7 +1,7 @@
 <template>
     <div class="hero-cont">
 
-        <div class="cont-75">
+        <div class="cont-60">
             <h1>Drive with Avada</h1>
             <span>We offer finest driving tution money can buy</span>
         </div>
@@ -28,9 +28,9 @@
     display: flex;
     align-items: center;
 
-    .cont-75{
+    .cont-60{
 
-        padding-top: 112px;
+        padding-top: 130px;
         
         h1{
 
@@ -40,7 +40,7 @@
 
         span{
 
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: rgb(228, 226, 226);
         }
     }

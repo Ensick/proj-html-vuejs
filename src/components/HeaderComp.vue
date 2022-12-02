@@ -3,7 +3,7 @@
         <nav>
 
             <div class="bg-darkgray">
-                <div class="head-call cont-75">
+                <div class="head-call cont-60">
                     <div>
                         <span>We have a 95% Successful Pass Rate!</span>
                     </div>
@@ -16,7 +16,7 @@
             </div>
 
             <div class="bg-rgba-darkgray">
-                <div class="head-nav-menu cont-75">
+                <div class="head-nav-menu cont-60">
 
                     <div>
                         <img src="../assets/img/avada-drivers-logo-1x.png" alt="logo">

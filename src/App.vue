@@ -3,6 +3,7 @@
 
     <HeaderComp/>
     <HeroComp/>
+    <MainComp/>
 
   </div>
 </template>
@@ -10,6 +11,7 @@
 <script>
 import HeaderComp from './components/HeaderComp.vue'
 import HeroComp from './components/HeroComp.vue'
+import MainComp from './components/MainComp.vue'
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
 
     HeaderComp,
     HeroComp,
+    MainComp,
   }
 }
 </script>
@@ -35,9 +38,9 @@ export default {
 
 }
 
-.cont-75{
+.cont-60{
 
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -45,6 +48,7 @@ export default {
 
   padding: 10px 20px;
   background-color: #7ABC64;
+  color: white;
   border-style: none;
   border-radius: 15px;
 }
