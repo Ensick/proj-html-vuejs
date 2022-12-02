@@ -13,8 +13,10 @@ import { faUserSecret,faPhoneFlip,faFolder,faDollarSign} from '@fortawesome/free
 /*Import icone regular */
 import { faFaceSmile } from '@fortawesome/free-regular-svg-icons'
 
+import { faFacebookF,faTwitter,faInstagram} from '@fortawesome/free-brands-svg-icons'
+
 /* add icons to the library */
-library.add(faUserSecret,faFaceSmile,faPhoneFlip,faFolder,faDollarSign)
+library.add(faUserSecret,faFaceSmile,faPhoneFlip,faFolder,faDollarSign,faFacebookF,faTwitter,faInstagram)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
