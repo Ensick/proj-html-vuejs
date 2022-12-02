@@ -50,7 +50,7 @@ export default {
   background-color: #7ABC64;
   color: white;
   border-style: none;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 

@@ -66,7 +66,7 @@ section{
         padding: 60px 30px;
         font-size: 1.2rem;
         position: relative;
-        top: -80px;
+        top: -40px;
 
         h3{
 

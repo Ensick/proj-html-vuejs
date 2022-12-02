@@ -95,7 +95,12 @@
 
             .bg-rgba-darkgray{
 
-                background-color: #25262675;
+                background-color: #252626b7;
+
+                &:hover{
+
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
 
                 .head-nav-menu{
 
@@ -136,6 +141,7 @@
                 text-align: center;
                 margin-bottom: 5px;
                 cursor: pointer;
+                box-shadow: 0 0 15px rgb(148, 144, 144);
             }
 
             .sales div span{

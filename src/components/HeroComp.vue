@@ -34,13 +34,13 @@
         
         h1{
 
-            font-size: 3.5rem;
+            font-size: 3rem;
             padding-bottom: 20px;
         }
 
         span{
 
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: rgb(228, 226, 226);
         }
     }
