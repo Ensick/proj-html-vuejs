@@ -6,6 +6,7 @@
         <SectionQuattro/>
         <SectionCinque/>
         <SectionSei/>
+        <SectionSette/>
     </main>
 </template>
 
@@ -16,6 +17,7 @@ import SectionTre from './SectionTre.vue'
 import SectionQuattro from './SectionQuattro.vue'
 import SectionCinque from './SectionCinque.vue'
 import SectionSei from './SectionSei.vue'
+import SectionSette from './SectionSette.vue'
 
     export default {
         name:'MainComp',
@@ -28,6 +30,7 @@ import SectionSei from './SectionSei.vue'
             SectionQuattro,
             SectionCinque,
             SectionSei,
+            SectionSette,
         }
     }
 </script>

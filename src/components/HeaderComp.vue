@@ -128,7 +128,7 @@
         .cont-sales{
             
             position: absolute;
-            right: 15px;
+            right: 20px;
             top: 150px;
 
             .demos,.sales{

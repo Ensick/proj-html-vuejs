@@ -69,7 +69,7 @@
             text-align: center;
             padding: 80px 0 60px 0;
             position: relative;
-            top: -30px;
+            top: -50px;
 
             h2{
 
@@ -122,7 +122,7 @@
             width: 100%;
             display: block;
             position: relative;
-            top: -31px;
+            top: -51px;
         }
     }
 

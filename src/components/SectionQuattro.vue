@@ -1,5 +1,7 @@
 <template>
     <section>
+        <img class="special" src="../assets/img/latestnews-bottom-modificata.jpg" alt="img">
+
         <div class="cont-60">
 
             <div class="rate">
@@ -88,123 +90,145 @@
 
 <style lang="scss" scoped>
 
-    .rate{
+    section{
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        height: 1250px;
 
-        .card-rate{
+        .special{
 
-            flex-basis: 32%;
-            text-align: center;
-            color: #929AA3;
-            background-color: white;
-            border-radius: 15px;
-            border-top: 5px solid #7ABC64;;
-            box-shadow: 0 25px 35px #bbbec1;
-            padding: 60px 50px;
             position: relative;
-            top: -40px;
+            top: -2px;
+            display: block;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-            div{
+        .cont-60{
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 250px;
-                height: 250px;
-                margin: 0 auto;
-                border: 10px solid #7ABC64;
-                border-radius: 50%;
+            position: relative;
+            top: -110px;
+        }
 
-                span{
+        .rate{
 
-                    font-size: 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .card-rate{
+
+                flex-basis: 32%;
+                text-align: center;
+                color: #929AA3;
+                background-color: white;
+                border-radius: 15px;
+                border-top: 5px solid #7ABC64;;
+                box-shadow: 0 25px 35px #bbbec1;
+                padding: 60px 50px;
+                position: relative;
+                top: -40px;
+
+                div{
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 250px;
+                    height: 250px;
+                    margin: 0 auto;
+                    border: 10px solid #7ABC64;
+                    border-radius: 50%;
+
+                    span{
+
+                        font-size: 4rem;
+                    }
+                }
+
+                h3{
+
+                    padding-top: 40px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .text{
+
+            display: flex;
+            align-items: center;
+            padding: 70px 0;
+
+            .left-text{
+
+                flex-basis: 70%;
+
+                h2{
+                    font-size: 2rem;
+                    padding-bottom: 35px;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                    line-height: 40px;
+                    color: #929AA3;
                 }
             }
 
-            h3{
+            .about-us{
 
-                padding-top: 40px;
-                font-size: 1.2rem;
-            }
-        }
-    }
+                flex-basis: 30%;
 
-    .text{
-
-        display: flex;
-        align-items: center;
-        padding: 70px 0;
-
-        .left-text{
-
-            flex-basis: 70%;
-
-            h2{
-                font-size: 2rem;
-                padding-bottom: 35px;
-            }
-
-            p{
-                font-size: 1.5rem;
-                line-height: 40px;
-                color: #929AA3;
+                span{
+                    display: block;
+                    text-align: center;
+                }
             }
         }
 
-        .about-us{
+        .instructors{
 
-            flex-basis: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-            span{
-                display: block;
+            .card-instructors{
+
+                flex-basis: 32%;
                 text-align: center;
+                color: #929AA3;
+                background-color: white;
+                border-radius: 15px;
+                border-top: 5px solid #7ABC64;;
+                box-shadow: 0 25px 35px #bbbec1;
+                padding: 60px 0;
+                position: relative;
+                top: 40px;
+
+                img{
+                    width: 300px;
+                    height: 200px;
+                }
+
+                h3{
+
+                    font-size: 1.6rem;
+                    padding: 20px 0 15px 0;
+                }
+
+                .cont-icon > *{
+
+                    padding-right: 15px;
+                    padding-bottom: 15px;
+                }
+
+                p{
+                
+                    padding: 0 60px;
+                }   
             }
         }
     }
-
-    .instructors{
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        .card-instructors{
-
-            flex-basis: 32%;
-            text-align: center;
-            color: #929AA3;
-            background-color: white;
-            border-radius: 15px;
-            border-top: 5px solid #7ABC64;;
-            box-shadow: 0 25px 35px #bbbec1;
-            padding: 60px 0;
-            position: relative;
-            top: 40px;
-
-            img{
-                width: 300px;
-                height: 200px;
-            }
-
-            h3{
-
-                font-size: 1.6rem;
-                padding: 20px 0 15px 0;
-            }
-
-            .cont-icon > *{
-
-                padding-right: 15px;
-                padding-bottom: 15px;
-            }
-
-            p{
-            
-                padding: 0 60px;
-            }   
-        }
-    }
+ 
 </style>
