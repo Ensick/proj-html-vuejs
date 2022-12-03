@@ -92,7 +92,7 @@
 
     section{
 
-        height: 1250px;
+        height: 1230px;
 
         .special{
 
@@ -107,7 +107,7 @@
         .cont-60{
 
             position: relative;
-            top: -110px;
+            top: -130px;
         }
 
         .rate{
