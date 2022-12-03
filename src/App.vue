@@ -51,6 +51,7 @@ export default {
   color: white;
   border-style: none;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 
