@@ -182,7 +182,7 @@
 
         .copyright{
 
-            background-color: black;
+            background-color: #1C1D1E;
             padding: 60px 0;
             color: #717472;
 
