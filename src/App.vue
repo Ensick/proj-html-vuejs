@@ -4,6 +4,7 @@
     <HeaderComp/>
     <HeroComp/>
     <MainComp/>
+    <FooterComp/>
 
   </div>
 </template>
@@ -12,6 +13,7 @@
 import HeaderComp from './components/HeaderComp.vue'
 import HeroComp from './components/HeroComp.vue'
 import MainComp from './components/MainComp.vue'
+import FooterComp from './components/FooterComp.vue'
 
 export default {
   name: 'App',
@@ -20,6 +22,7 @@ export default {
     HeaderComp,
     HeroComp,
     MainComp,
+    FooterComp,
   }
 }
 </script>

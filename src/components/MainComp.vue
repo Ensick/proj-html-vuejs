@@ -1,11 +1,18 @@
 <template>
     <main>
+        <!-- Sezione-Sing-In -->
         <SectionUno/>
+        <!-- Sezione-Start-Learning -->
         <SectionDue/>
+        <!-- Sezione-Corsi -->
         <SectionTre/>
+        <!-- Sezione-Istruttori -->
         <SectionQuattro/>
+        <!-- Sezione-Testimonianze -->
         <SectionCinque/>
+        <!--  Sezione-News -->
         <SectionSei/>
+        <!-- Sezione-Newsletter -->
         <SectionSette/>
     </main>
 </template>
