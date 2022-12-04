@@ -133,6 +133,7 @@
                     &.active{
 
                         color: #7ABC64;
+                        scale: 1.2;
                     }
                 }
             }
