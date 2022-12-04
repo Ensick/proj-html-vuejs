@@ -5,9 +5,9 @@
         <!-- Sezione-Start-Learning -->
         <SectionDue/>
         <!-- Sezione-Corsi -->
-        <SectionTre/>
+        <SectionTre :arrayCourses="arrayCourses"/>
         <!-- Sezione-Istruttori -->
-        <SectionQuattro/>
+        <SectionQuattro :arrayRate="arrayRate"/>
         <!-- Sezione-Testimonianze -->
         <SectionCinque/>
         <!--  Sezione-News -->
@@ -38,7 +38,13 @@ import SectionSette from './SectionSette.vue'
             SectionCinque,
             SectionSei,
             SectionSette,
-        }
+        },
+
+        props:{
+
+            arrayCourses: Array,
+            arrayRate: Array,
+        },
     }
 </script>
 

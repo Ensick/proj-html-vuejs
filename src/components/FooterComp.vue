@@ -120,7 +120,9 @@
                 }
 
                 p{
-                    color:#A9ADB4;;
+                    color: #A9ADB4;
+                    line-height: 20px;
+                    padding-right: 10px;
                 }
             }
 

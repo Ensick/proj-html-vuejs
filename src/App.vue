@@ -1,9 +1,9 @@
 <template>
   <div id="app">
 
-    <HeaderComp/>
+    <HeaderComp :arrayHeader="arrayHeader"/>
     <HeroComp/>
-    <MainComp/>
+    <MainComp :arrayCourses ="arrayCourses" :arrayRate="arrayRate"/>
     <FooterComp/>
 
   </div>
@@ -23,6 +23,62 @@ export default {
     HeroComp,
     MainComp,
     FooterComp,
+  },
+
+  data(){
+    return{
+
+      arrayHeader:[
+        {
+          name: 'HOME'
+        },
+        {
+          name: 'ABOUT'
+        },
+        {
+          name: 'PRICES'
+        },
+        {
+          name: 'COURSES'
+        },
+        {
+          name: 'LOCATIONS'
+        },
+        {
+          name: 'BLOG'
+        },
+      ],
+
+      arrayCourses:[
+        {
+          src:'courses-passplus.jpg',
+          name: 'Pass Plus'
+        },
+        {
+          src:'course-intensive.jpg',
+          name: 'Intensive Course'
+        },
+        {
+          src:'courses-instructor.jpg',
+          name: 'Instructors'
+        },
+      ],
+
+      arrayRate:[
+        {
+          rate:'95%',
+          category:'PASS RATE'
+        },
+        {
+          rate:'100%',
+          category:'REFFERRAL RATE'
+        },
+        {
+          rate:'0%',
+          category:'ACCIDENT RATE'
+        },
+      ]
+    }
   }
 }
 </script>

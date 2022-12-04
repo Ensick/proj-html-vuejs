@@ -6,27 +6,12 @@
 
             <div class="rate">
 
-                <div class="card-rate">
+                <div class="card-rate" v-for="(elem,index) in  arrayRate" :key="index">
                     <div>
-                        <span>95%</span>
+                        <span>{{elem.rate}}</span>
                     </div>
                     
-                    <h3>PASS RATE</h3>
-                </div>
-
-                <div class="card-rate">
-                    <div>
-                         <span>100%</span>
-                    </div>
-                   
-                    <h3>REFFERRAL RATE</h3>
-                </div>
-
-                <div class="card-rate">
-                    <div>
-                         <span>0%</span>
-                    </div>  
-                    <h3>ACCIDENT RATE</h3>
+                    <h3>{{elem.category}}</h3>
                 </div>
 
             </div>
@@ -84,7 +69,12 @@
 
 <script>
     export default {
-        name:'SectionQuattro'
+        name:'SectionQuattro',
+
+        props:{
+
+            arrayRate: Array,
+        }
     }
 </script>
 

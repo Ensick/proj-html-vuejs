@@ -24,12 +24,7 @@
 
                     <div class="menu">
                         <ul>
-                            <li>HOME</li>
-                            <li>ABOUT</li>
-                            <li>PRICES</li>
-                            <li>COURSES</li>
-                            <li>LOCATIONS</li>
-                            <li>BLOG</li>
+                            <li v-for="(elem,index) in arrayHeader" :key="index">{{elem.name}}</li>
                         </ul>
                         
                         <span class="btn-green">BOOK NOW</span>
@@ -59,7 +54,12 @@
 
 <script>
     export default {
-        name: 'HeaderComp'
+        name: 'HeaderComp',
+
+        props:{
+
+            arrayHeader: Array,
+        }
     }
 </script>
 

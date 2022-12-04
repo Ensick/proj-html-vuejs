@@ -10,21 +10,9 @@
             </div>
 
             <div class="learn-more">
-                <div>
-                    <img src="../assets/img/courses-passplus.jpg" alt="img">
-                    <h3>Pass Plus</h3>
-                    <span class="btn-empty-blue">LEARN MORE</span>
-                </div>
-
-                <div>
-                    <img src="../assets/img/course-intensive.jpg" alt="img">
-                    <h3>Intensive Course</h3>
-                    <span class="btn-empty-blue">LEARN MORE</span>
-                </div>
-
-                <div>
-                    <img src="../assets/img/courses-instructor.jpg" alt="img">
-                    <h3>Instructors</h3>
+                <div v-for="(elem,index) in arrayCourses" :key="index">
+                    <img :src="require(`../assets/img/${elem.src}`)" alt="img">
+                    <h3>{{elem.name}}</h3>
                     <span class="btn-empty-blue">LEARN MORE</span>
                 </div>
             </div>
@@ -35,7 +23,12 @@
 
 <script>
     export default {
-        name: 'SectionTre'
+        name: 'SectionTre',
+
+        props:{
+
+            arrayCourses: Array,
+        }
     }
 </script>
 
