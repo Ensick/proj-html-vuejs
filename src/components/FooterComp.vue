@@ -119,6 +119,11 @@
 
                         padding-left: 10px;
                         cursor: pointer;
+
+                        &:hover{
+
+                            color: white;
+                        }
                     }
                 }
             }
@@ -139,6 +144,12 @@
 
                         padding-left: 10px;
                         cursor: pointer;
+
+                        &:hover{
+
+                            color: #8cd774;
+                            text-shadow: 2px 2px 2px black;
+                        }
                     }
                 }
             }

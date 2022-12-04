@@ -118,7 +118,19 @@
                         ul{
 
                             display: flex;
-                            gap: 0 15px
+                            gap: 0 15px;
+
+                            li{
+
+                                cursor: pointer;
+                                padding: 10px 0;
+
+                                &:hover{
+
+                                    color: #7ABC64;
+                                    box-shadow: 0 3px 0 #7ABC64;
+                                }
+                            }
                         }
                     }
                 }

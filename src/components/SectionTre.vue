@@ -106,6 +106,12 @@
                     border: 3px solid #33475B;
                     border-radius: 20px;
                     cursor: pointer;
+
+                    &:hover{
+                        
+                         color: #7ABC64;
+                        border: 3px solid #7ABC64;
+                    }
                 }
             }
         }
