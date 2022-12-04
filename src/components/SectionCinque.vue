@@ -4,15 +4,11 @@
             <div class="slider-testimonials">
                 <h2>Testimonials</h2>
                 <span>Here's what our happy drivers had to say about our services</span>
-                <img src="../assets/img/testimonial-sophia.png" alt="img">
-                <p>Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Hingly reccomended</p>
-                <h3>Sophia Jones</h3>
+                <img :src="require(`../assets/img/${this.arrayTestimonials[indexCerchio].src}`)" alt="img">
+                <p>{{this.arrayTestimonials[indexCerchio].text}}</p>
+                <h3>{{this.arrayTestimonials[indexCerchio].name}}</h3>
                 <div class="cont-icons">
-                    <font-awesome-icon icon="fa-solid fa-circle" />
-                    <font-awesome-icon icon="fa-solid fa-circle" />
-                    <font-awesome-icon icon="fa-solid fa-circle" />
-                    <font-awesome-icon icon="fa-solid fa-circle" />
-                    <font-awesome-icon icon="fa-solid fa-circle" />
+                    <font-awesome-icon :class="{'active' : index == indexCerchio}" @click="cambioTestimonial(index)" icon="fa-solid fa-circle" v-for="(circle,index) in 5" :key="index"/>
                 </div>
             </div>
         </div>
@@ -21,7 +17,48 @@
 
 <script>
     export default {
-        name:'SectionCinque'
+        name:'SectionCinque',
+
+        props:{
+            
+            arrayTestimonials: Array,
+        },
+
+        data(){
+
+            return{
+
+                indexCerchio: 0,
+            }
+        },
+
+        created(){
+
+            setInterval(() => {
+                
+               this.indexCerchio ++
+
+               if(this.indexCerchio >= 5){
+
+                    this.indexCerchio = 0
+               }
+
+            }, 5000)
+        },
+
+        methods:{
+
+            cambioTestimonial(index){
+
+                this.indexCerchio = index  
+
+                console.log(this.indexCerchio);
+                
+                return this.indexCerchio
+            },
+        },
+
+      
     }
 </script>
 
@@ -54,7 +91,7 @@
                 h2{
 
                     font-size: 2.2rem;
-                    padding-bottom: 15px;
+                    padding-bottom: 25px;
                 }
 
                 span{
@@ -79,6 +116,7 @@
                     padding: 0 60px 30px 60px;
                 }
 
+
                 h3{
 
                     color: #929AA3;
@@ -91,6 +129,11 @@
                     font-size: 0.7rem;
                     color: #929AA3;
                     padding-inline-start: 10px;
+
+                    &.active{
+
+                        color: #7ABC64;
+                    }
                 }
             }
         }

@@ -3,7 +3,7 @@
 
     <HeaderComp :arrayHeader="arrayHeader"/>
     <HeroComp/>
-    <MainComp :arrayCourses ="arrayCourses" :arrayRate="arrayRate" :arrayInstructors="arrayInstructors"/>
+    <MainComp :arrayCourses ="arrayCourses" :arrayRate="arrayRate" :arrayInstructors="arrayInstructors" :arrayTestimonials="arrayTestimonials"/>
     <FooterComp :arrayFooterContacts="arrayFooterContacts" :arrayFooterCourses="arrayFooterCourses"/>
 
   </div>
@@ -138,6 +138,35 @@ export default {
           type:'fa-solid',
           course:'Instructor Training',
         },
+      ],
+
+      arrayTestimonials:[
+        {
+          src:'testimonial-grant.png',
+          name:'Grant Smith',
+          text:'Very professional Instructos!'
+        },
+        {
+          src:'testimonial-harold.png',
+          name:'Harold Jhonson',
+          text:'Truly effective course,definetedly worth every single penny!'
+        },
+        {
+          src:'testimonial-kate.png',
+          name:'Kate Miller',
+          text:'Thanks to the Intensive Course my driving skills improved in no time, Jeremy was the best instructor ever!'
+        },
+        {
+          src:'testimonial-kelly.png',
+          name:'Kelly White',
+          text:'James May taught me how to drive in a safe way,love him!'
+        },
+        {
+          src:'testimonial-sophia.png',
+          name:'Sophia Jones',
+          text:'Avada Driving School really helped build my confidence behind the wheel and with driving in general, and they got me a first time pass! Higly reccomended'
+        },
+      
       ]
     }
   }

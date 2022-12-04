@@ -9,7 +9,7 @@
         <!-- Sezione-Istruttori -->
         <SectionQuattro :arrayRate="arrayRate" :arrayInstructors="arrayInstructors"/>
         <!-- Sezione-Testimonianze -->
-        <SectionCinque/>
+        <SectionCinque :arrayTestimonials="arrayTestimonials"/>
         <!--  Sezione-News -->
         <SectionSei/>
         <!-- Sezione-Newsletter -->
@@ -45,6 +45,7 @@ import SectionSette from './SectionSette.vue'
             arrayCourses: Array,
             arrayRate: Array,
             arrayInstructors: Array,
+            arrayTestimonials: Array,
         },
     }
 </script>
