@@ -12,50 +12,19 @@
                 <div class="contacts">
                     <h3>CONTACT DETAILS</h3>
 
-                    <div>
-                        <font-awesome-icon icon="fa-solid fa-house"/>
-                        <span>12345 North Main Street,New York,NY 555555</span>
-                    </div>
-
-                    <div>
-                        <font-awesome-icon icon="fa-solid fa-phone-flip"/>
-                        <span>1-800-555-6789</span>
-                    </div>
-
-                    <div>
-                        <font-awesome-icon icon="fa-regular fa-envelope"/>
-                        <span>info@your-domain.com</span>
-                    </div>
-
-                    <div>
-                        <font-awesome-icon icon="fa-solid fa-link"/>
-                        <span>Theme-Fusion.com</span>
+                    <div v-for="(elem,index) in arrayFooterContacts" :key="index">
+                        <font-awesome-icon :icon="`${elem.type} ${elem.icon}`"/>
+                        <span>{{elem.contact}}</span>
                     </div>
                 </div>
 
                 <div class="courses">
                     <h3>COURSES</h3>
 
-                    <div>
-                        <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
-                        <span>Pass Plus</span>
+                    <div v-for="(elem,index) in arrayFooterCourses" :key="index">
+                        <font-awesome-icon :icon="`${elem.type} ${elem.icon}`"/>
+                        <span>{{elem.course}}</span>
                     </div>
-
-                    <div>
-                        <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
-                        <span>Intensive Course</span>
-                    </div>
-
-                    <div>
-                        <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
-                        <span>Automatic</span>
-                    </div>
-
-                    <div>
-                        <font-awesome-icon icon="fa-solid fa-circle-arrow-right"/>
-                        <span>Instructor Training</span>
-                    </div>
-
                 </div>
 
                 <div class="cont-grid">
@@ -86,7 +55,13 @@
 
 <script>
     export default {
-        name: 'FooterComp'
+        name: 'FooterComp',
+
+        props:{
+
+            arrayFooterContacts: Array,
+            arrayFooterCourses: Array,
+        }
     }
 </script>
 

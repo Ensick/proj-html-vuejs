@@ -4,7 +4,7 @@
     <HeaderComp :arrayHeader="arrayHeader"/>
     <HeroComp/>
     <MainComp :arrayCourses ="arrayCourses" :arrayRate="arrayRate" :arrayInstructors="arrayInstructors"/>
-    <FooterComp/>
+    <FooterComp :arrayFooterContacts="arrayFooterContacts" :arrayFooterCourses="arrayFooterCourses"/>
 
   </div>
 </template>
@@ -91,6 +91,52 @@ export default {
         {
           src:'Richard-Hammond.jpg',
           name: 'Richard Hammond',
+        },
+      ],
+
+      arrayFooterContacts:[
+        {
+          icon:'fa-house',
+          type:'fa-solid',
+          contact:'12345 North Main Street,New York,NY 555555',
+        },
+        {
+          icon:'fa-phone-flip',
+          type:'fa-solid',
+          contact:'1-800-555-6789',
+        },
+        {
+          icon:'fa-envelope',
+          type:'fa-regular',
+          contact:'info@your-domain.com',
+        },
+        {
+          icon:'fa-link',
+          type:'fa-solid',
+          contact:'Theme-Fusion.com',
+        },
+      ],
+
+      arrayFooterCourses:[
+        {
+          icon:'fa-circle-arrow-right',
+          type:'fa-solid',
+          course:'Pass Plus',
+        },
+        {
+          icon:'fa-circle-arrow-right',
+          type:'fa-solid',
+          course:'Intensive Course',
+        },
+        {
+          icon:'fa-circle-arrow-right',
+          type:'fa-solid',
+          course:'Automatic',
+        },
+        {
+          icon:'fa-circle-arrow-right',
+          type:'fa-solid',
+          course:'Instructor Training',
         },
       ]
     }
