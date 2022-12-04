@@ -3,7 +3,7 @@
 
     <HeaderComp :arrayHeader="arrayHeader"/>
     <HeroComp/>
-    <MainComp :arrayCourses ="arrayCourses" :arrayRate="arrayRate"/>
+    <MainComp :arrayCourses ="arrayCourses" :arrayRate="arrayRate" :arrayInstructors="arrayInstructors"/>
     <FooterComp/>
 
   </div>
@@ -76,6 +76,21 @@ export default {
         {
           rate:'0%',
           category:'ACCIDENT RATE'
+        },
+      ],
+
+      arrayInstructors:[
+        {
+          src:'james-may-laferrari.jpg',
+          name: 'James May',
+        },
+        {
+          src:'Jeremy-clarkson.jpg',
+          name: 'Jeremy Clarkson',
+        },
+        {
+          src:'Richard-Hammond.jpg',
+          name: 'Richard Hammond',
         },
       ]
     }

@@ -30,31 +30,9 @@
             </div>
 
             <div class="instructors">
-                <div class="card-instructors">
-                    <img src="../assets/img/instructor-mikehart.jpg" alt="img">
-                    <h3>Mike Hart</h3>
-                    <div class="cont-icon">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                        <font-awesome-icon icon="fa-brands fa-twitter" />
-                        <font-awesome-icon icon="fa-brands fa-instagram" />
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="card-instructors special-card">
-                    <img src="../assets/img/instructor-johnsmith.jpg" alt="img">
-                    <h3>John Smith</h3>
-                    <div class="cont-icon">
-                        <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                        <font-awesome-icon icon="fa-brands fa-twitter" />
-                        <font-awesome-icon icon="fa-brands fa-instagram" />
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-                <div class="card-instructors">
-                    <img src="../assets/img/instructor-angelahart.jpg" alt="img">
-                    <h3>Angela Hart</h3>
+                <div class="card-instructors" v-for="(elem,index) in arrayInstructors" :key="index">
+                    <img :src="require(`../assets/img/${elem.src}`)" alt="img">
+                    <h3>{{elem.name}}</h3>
                     <div class="cont-icon">
                         <font-awesome-icon icon="fa-brands fa-facebook-f" />
                         <font-awesome-icon icon="fa-brands fa-twitter" />
@@ -74,6 +52,7 @@
         props:{
 
             arrayRate: Array,
+            arrayInstructors: Array,
         }
     }
 </script>
